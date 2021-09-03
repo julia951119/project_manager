@@ -1,9 +1,11 @@
 package repository;
 
-public class UserRepository implements UserRepositoryInterface {
+import User.User;
+import org.springframework.data.repository.CrudRepository;
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
+public interface UserRepository extends CrudRepository<User, Long> {
+
+
+
+
 }
