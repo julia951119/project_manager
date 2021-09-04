@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Projekt Grupa 1</title>
+    <title>Dodaj zadanie</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -49,24 +49,18 @@
         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#about">O Nas</a>
+                    <a class="nav-link page-scroll" href="#header">Jesteś w trakcie dodawania zadania<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dalsze akcje</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item page-scroll" href="dodajZadanie.html">Dodaj Zadanie</a>
+                        <a class="dropdown-item page-scroll" href="index.html">wróć do strony głównej</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item page-scroll" href="terms.html">Dodaj Projekt</a>
+                        <a class="dropdown-item page-scroll" href="terms.html">B</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item page-scroll" href="privacy.html">C</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
         </div> <!-- end of navbar-collapse -->
@@ -74,85 +68,71 @@
 </nav> <!-- end of navbar -->
 <!-- end of navigation -->
 
-
 <!-- Header -->
-<header id="header" class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="text-container">
-                    <h1 class="h1-large">Nasz pierwszy projekt praktyczny. </h1>
-                </div> <!-- end of text-container -->
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</header> <!-- end of header -->
+<header id="header1" class="header1">
+</header>
+<div class="container-sm">
+    <div class="row">
+        <div class="col-xsml-6">
+            <div class="text-container">
+                <h1 class="h3-sml">Dodaj Zadanie</h1>
+            </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+</div> <!-- end of container -->
+
 <!-- end of header -->
 
+<form>
+    <div class="mb-3">
+        <label for="labelNazwaZadania" class="form-label">Nazwa Zadania</label>
+        <input type="NazwaZadnia" class="form-control" id="task" placeholder="Tak będzie nazywało się twoje zadanie" required>
+    </div>
+    <div class="mb-3">
+        <label for="labelNazwaOpisu" class="form-label">Opis</label>
+        <input type="Opis" class="form-control" id="task" placeholder="wpisz krótki opis tego zadania">
+    </div>
+    <div class="mb-3">
+        <label for="exampleDataList" class="form-label">Postęp</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Zacznij wpisywać by wyszukać opcje" required>
+        <datalist id="datalistOptions">
+            <option value="Backlog">
+            <option value="To Do">
+            <option value="In Progress">
+            <option value="QA">
+            <option value="Done">
+        </datalist>
+    </div>
+    <div class="mb-3">
+        <label for="exampleDataList" class="form-label">Waga</label>
+        <input class="form-control" list="wagaListOptions" id="wagaDataList" placeholder="1 - najważniejsze, 5 - najmniej ważne" required>
+        <datalist id="wagaListOptions">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+        </datalist>
+    </div>
+    <div class="mb-3">
+        <label for="exampleDataList" class="form-label">Owner</label>
+        <input class="form-control" list="OwnerListOptions" id="ownerDataList" placeholder="kto musi wykonać to zadanie" required>
+        <datalist id="OwnerListOptions">
+            <option value="Imie1">
+            <option value="Imie2">
+            <option value="Imie3">
+            <option value="Imie4">
+        </datalist>
 
-<!-- About-->
-<div id="about" class="basic-1 bg-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="text-container first">
-                    <h2>Cześć, jesteśmy grupa 1.</h2>
-                    <p>To jest nasz pierwszy duży projekt praktyczny.
-                        Prezentujemy managera projektow. Ta strona umozliwia dodawanie uzytkownikow, projektow, sprintow etc.</p>
-                </div> <!-- end of text-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-8">
-                <div class="text-container second">
-                    <div class="time">Programujemy dopiero od niecałego roku.</div>
-                    <h6>Mamy przyjemność uczyć się z akademią SDA.</h6>
-                    <p>Ten projekt jest naszym grupowym projektem końcowym.</p>
-                </div> <!-- end of text-container -->
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of basic-1 -->
-<!-- end of about -->
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+        <label class="form-check-label" for="exampleCheck1">Potwierdzam że jestem gotowy żeby zapisać</label>
+    </div>
 
-
-<!-- Contact -->
-<div id="contact" class="form-1 bg-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Dane kontaktowe</h2>
-                <p class="p-heading">Jeśli masz do nas jakiekolwiek pytania, proszę wyślij nam maila, lub wypełnij formę poniżej. Odezwiemy się do ciebie w najbliższym możliwym terminie.
-                    <a class="blue no-line" href="#your-link">contact@domain.com</a></p>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-        <div class="row">
-            <div class="col-lg-12">
-
-                <!-- Contact Form -->
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" class="form-control-input" id="cname" required>
-                        <label class="label-control" for="cname">Imię</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control-input" id="cemail" required>
-                        <label class="label-control" for="cemail">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                        <label class="label-control" for="cmessage">Treść zapytania</label>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="form-control-submit-button">Wyślij</button>
-                    </div>
-                </form>
-                <!-- end of contact form -->
-
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of form-1 -->
-<!-- end of contact -->
-
+    <button type="submit" class="btn btn-primary">Zapisz</button>
+    <div class="mb-3 form-check"></div>
+</form>
 
 <!-- Footer -->
 <div class="footer bg-gray">
