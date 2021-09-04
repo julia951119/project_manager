@@ -46,7 +46,7 @@
     .on('click', '.dropdown-menu a', toggleDropdown);
 
 
-    /* Move Form Fields Label When User Types */
+    /* Move Form Fields Label When com.application.User Types */
     // for input and textarea fields
     $("input, textarea").keyup(function(){
 		if ($(this).val() != '') {

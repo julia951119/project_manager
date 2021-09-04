@@ -1,6 +1,4 @@
-package User;
-
-import java.util.Objects;
+package com.application.User;
 
 public class User{
 
