@@ -20,11 +20,11 @@ public class ControllerTask {
     }
 
 
-    @GetMapping(value = {"/taskName"})
+    @PostMapping(value = {"/DodajZadanie"})
     public String setTask(Model model) {
 
        TaskZadanie taskZadanie = taskRepository.save(new TaskZadanie(taskName));
-        model.getAttribute(taskZadanie.getTaskName());
+            model.getAttribute(taskZadanie.getTaskName());
 
 
         System.out.println(taskZadanie.getTaskName());
