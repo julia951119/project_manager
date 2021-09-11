@@ -85,10 +85,10 @@
 
 
 <!--/*@thymesVar id="taskName" type="User.TaskZadanie"*/-->
-<form method = "post" th:action="/Dodajzadanie" th:type="*${taskName}">
+<form name="Dodajzadanie" th:value="${taskName}">
     <div class="mb-3">
-        <label class="form-label">Nazwa Zadania</label>
-        <input type="text" th:field="*${taskName}" class="form-control" id="taskName" placeholder="Tak będzie nazywało się twoje zadanie" required
+        <label for="taskname" class="form-label">Nazwa Zadania</label>
+        <input type="text" name="Dodajzadanie" th:field="*${User.TaskZadanie}" class="form-control" id="taskName" placeholder="Tak będzie nazywało się twoje zadanie" required
     </div>
     <div class="mb-3">
         <label for="opis" class="form-label">Opis</label>
